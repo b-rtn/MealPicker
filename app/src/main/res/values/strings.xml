@@ -1,110 +1,478 @@
 <resources>
+
+
     <string name="app_name">MealPicker</string>
     <string name="smoothie">SMOOTHIE</string>
     <string name="salad">SALAD</string>
     <string name="soup">SOUP</string>
     <string name="stirfry">STIRFRY</string>
     <string name="pickfruit">PICK A FRUIT</string>
+
+
+    <string name="tab1">INGREDIENTS</string>
+    <string name="tab2">INSTRUCTION</string>
+    <string name="tab3">NUTRIENTS</string>
+    <string name="action_settings">Settings</string>
+
+
     <string name="title_activity_smoothies">Smoothies</string>
     <string name="strawberrybanana">Strawberry Banana </string>
     <string name="peachsmoothie">Peach </string>
     <string name="carrotcake">Carrot Cake </string>
     <string name="greensmoothie">Healthy Green </string>
     <string name="blueberrypie">Blueberry Pie </string>
-    <string name="action_settings">Settings</string>
-    <string name="title_activity_salad">Salad</string>
-    <string name="large_text">
-        "Material is the metaphor.\n\n"
+    <string name="title_activity_strawbana">Strawberry Banana</string>
+    <string name="title_activity_peach">Peach</string>
+    <string name="title_activity_carrot_cake">Carrot Cake</string>
+    <string name="title_activity_blueberry_pie">Blueberry Pie</string>
+    <string name="title_activity_healthy_green">Healthy Green</string>
 
-        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
-        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
-        "technologically advanced and open to imagination and magic.\n"
-        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
-        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
-        "flexibility of the material creates new affordances that supercede those in the physical "
-        "world, without breaking the rules of physics.\n"
-        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
-        "interact, and exist in space and in relation to each other. Realistic lighting shows "
-        "seams, divides space, and indicates moving parts.\n\n"
 
-        "Bold, graphic, intentional.\n\n"
-
-        "The foundational elements of print based design typography, grids, space, scale, color, "
-        "and use of imagery guide visual treatments. These elements do far more than please the "
-        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
-        "imagery, large scale typography, and intentional white space create a bold and graphic "
-        "interface that immerse the user in the experience.\n"
-        "An emphasis on user actions makes core functionality immediately apparent and provides "
-        "waypoints for the user.\n\n"
-
-        "Motion provides meaning.\n\n"
-
-        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
-        "inflection points that initiate motion, transforming the whole design.\n"
-        "All action takes place in a single environment. Objects are presented to the user without "
-        "breaking the continuity of experience even as they transform and reorganize.\n"
-        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
-        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
-
-        "3D world.\n\n"
-
-        "The material environment is a 3D space, which means all objects have x, y, and z "
-        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
-        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
-        "position along the z-axis and has a standard 1dp thickness.\n"
-        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
-        "emulated by manipulating the y-axis.\n\n"
-
-        "Light and shadow.\n\n"
-
-        "Within the material environment, virtual lights illuminate the scene. Key lights create "
-        "directional shadows, while ambient light creates soft shadows from all angles.\n"
-        "Shadows in the material environment are cast by these two light sources. In Android "
-        "development, shadows occur when light sources are blocked by sheets of material at "
-        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
-        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
-
-        "Resting elevation.\n\n"
-
-        "All material objects, regardless of size, have a resting elevation, or default elevation "
-        "that does not change. If an object changes elevation, it should return to its resting "
-        "elevation as soon as possible.\n\n"
-
-        "Component elevations.\n\n"
-
-        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
-        "does not vary from 6dp in one app to 16dp in another app).\n"
-        "Components may have different resting elevations across platforms, depending on the depth "
-        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
-
-        "Responsive elevation and dynamic elevation offsets.\n\n"
-
-        "Some component types have responsive elevation, meaning they change elevation in response "
-        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
-        "changes are consistently implemented using dynamic elevation offsets.\n"
-        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
-        "to the component’s resting state. They ensure that elevation changes are consistent "
-        "across actions and component types. For example, all components that lift on press have "
-        "the same elevation change relative to their resting elevation.\n"
-        "Once the input event is completed or cancelled, the component will return to its resting "
-        "elevation.\n\n"
-
-        "Avoiding elevation interference.\n\n"
-
-        "Components with responsive elevations may encounter other components as they move between "
-        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
-        "through other material, components avoid interfering with one another any number of ways, "
-        "whether on a per component basis or using the entire app layout.\n"
-        "On a component level, components can move or be removed before they cause interference. "
-        "For example, a floating action button (FAB) can disappear or move off screen before a "
-        "user picks up a card, or it can move if a snackbar appears.\n"
-        "On the layout level, design your app layout to minimize opportunities for interference. "
-        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
-        "when a user tries to pick up one of cards.\n\n"
+    <string name="Smoothie1_Ingre">
+        "4 cups frozen strawberries\n\n"
+        "1 cup frozen banana chunks\n\n"
+        "1 cup milk of choice\n\n" 
     </string>
-    <string name="title_activity_soup">Soup</string>
-    <string name="title_activity_stirfry">Stirfry</string>
+    <string name="Smoothie1_Instruct">
+        "Add the milk to the bottom of your high speed blender\n\n"
+        "Add strawberries and frozen bananas on top of the milk\n\n"
+        "Blend, scraping down the edges if necessary\n\n"
+        "Serves 2-3 glasses\n\n"
+    </string>
+    <string name="Smoothie2_Ingre">
+        "2 cups kale\n\n"
+        "1 inch piece of ginger, peeled\n\n"
+        "3 oranges, peeled\n\n"
+        "1 lemon, peeled\n\n"
+        "1 small frozen banana\n\n"
+        "1 cup frozen peaches\n\n"
+        "1 cup cold water\n\n"
+        "2 cups ice\n\n"</string>
+    <string name="Smoothie2_Instruct">
+        "Combine all ingredients except ice in a Blendtec or other high speed blender and blend until smooth.\n\n"
+        "Add ice and blend\n\n"
+        "Serves 1-2 very large glasses, or 4-5 regular sized\n\n"
+    </string>
+    <string name="Smoothie3_Ingre">
+        "16 oz frozen peach slices\n\n"
+        "1 fresh peach, pit removed\n\n"
+        "1 cup plain 0% greek yogurt\n\n"
+        "1 cup milk\n\n"
+        "1/4 teaspoon cinnamon\n\n"
+        "1/4 cup rolled oats\n\n"
+        "4 tablespoons pure maple syrup\n\n"
+    </string>
+    <string name="Smoothie3_Instruct">
+        "Combine all ingredients in a high speed blender and blend until smooth (it will be very thick)\n\n"
+        "Pour and enjoy!\n\n"
+        "Serves 2 glasses\n\n"
+    </string>
+    <string name="Smoothie4_Ingre">
+        "3 medium carrots, peeled\n\n"
+        "1 1/2 bananas, frozen in chunks\n\n"
+        "1 cup 2% milk\n\n"
+        "1/2 cup plain 0% greek yogurt\n\n"
+        "1/4 teaspoon cinnamon\n\n"
+        "1/4 teaspoon nutmeg\n\n"
+        "3 tablespoons pure maple syrup\n\n"
+        "1 cup ice (optional)\n\n"
+    </string>
+    <string name="Smoothie4_Instruct">
+        "Add all ingredients to a high speed blender and blend until smooth\n\n"
+        "Serve immediately\n\n"
+        "Serves 2 glasses\n\n"
+    </string>
+    <string name="Smoothie5_Ingre">
+        "3/4 teaspoon lemon zest\n\n"
+        "1 cup frozen banana chunks\n\n"
+        "3 cups frozen blueberries\n\n"
+        "1/2 cup rolled oats\n\n"
+        "1 cup plain 0% greek yogurt\n\n"
+        "1/8 cup pure maple syrup\n\n"
+        "1 1/2 cups unsweetened vanilla almond milk\n\n"
+        "1/2 teaspoon cinnamon\n\n"
+    </string>
+    <string name="Smoothie5_Instruct">
+        "Add all ingredients to a high speed blender and blend until smooth\n\n"
+        "Serves 2-3 glasses\n\n"
+    </string>
+
+
+    <string name="title_activity_salad">Salads</string>
+    <string name="greenbeanwalnut">Green Bean And Walnut Salad</string>
+    <string name="mozzarellatomato">Freash Mozzarella And Tomato Salad</string>
+    <string name="strawberryspinach">Strawberry Spinach Salad</string>
+    <string name="cornnbean">Colorful Corn And Bean Salad</string>
+    <string name="tomato">Sliced Tomato Salad</string>
+
+
+    <string name="Salad1_Ingre">
+        "3 pounds fresh green beans, trimmed\n\n"
+        "3/4 cup chopped walnuts\n\n"
+        "1/3 cup dried cranberries\n\n"
+        "VINAIGRETTE:\n\n"
+        "6 tablespoons olive oil\n\n"
+        "6 tablespoons red wine vinegar\n\n"
+        "3 garlic cloves, minced\n\n"
+        "1/2 teaspoon salt\n\n"
+        "1/2 teaspoon pepper\n\n"
+    </string>
+    <string name="Salad1_Instruct">
+        "Place beans in a Dutch oven and cover with water. Bring to a boil. Cover and cook for 4-7 minutes or until crisp-tender; drain.\n\n"
+        "In a large bowl, combine the beans, walnuts and cranberries. In a small bowl, whisk the vinaigrette ingredients. Pour over bean mixture; toss to coat. Cover and refrigerate until chilled. Toss before serving.\n\n"
+        "Makes 12 servings\n\n"
+</string>
+    <string name="Salad2_Ingre">
+        "6 plum tomatoes, chopped\n\n"
+        "2 cartons (8 ounces each) fresh mozzarella cheese pearls, drained\n\n"
+        "1/3 cup minced fresh basil\n\n"
+        "1 tablespoon minced fresh parsley\n\n"
+        "2 teaspoons minced fresh mint\n\n"
+        "1/4 cup lemon juice\n\n"
+        "1/4 cup olive oil\n\n"
+        "3/4 teaspoon salt\n\n"
+        "1/4 teaspoon pepper\n\n"
+        "2 medium ripe avocados, peeled and chopped\n\n"
+    </string>
+    <string name="Salad2_Instruct">
+        "In a large bowl, combine the tomatoes, cheese, basil, parsley and mint; set aside.\n\n"
+        "In a small bowl, whisk the lemon juice, oil, salt and pepper. Pour over tomato mixture; toss to coat. Cover and refrigerate for at least 1 hour before serving.\n\n"
+        "Just before serving, stir in avocados. Serve with a slotted spoon.\n\n"
+        "Makes 8 servings\n\n"
+    </string>
+    <string name="Salad3_Ingre">
+        "1/3 cup olive oil\n\n"
+        "1/4 cup sugar\n\n"
+        "3 tablespoons white or balsamic vinegar\n\n"
+        "2 tablespoons sesame seeds\n\n"
+        "1 tablespoon poppy seeds\n\n"
+        "1 tablespoon chopped onion\n\n"
+        "1/4 teaspoon paprika\n\n"
+        "1/4 teaspoon Worcestershire sauce\n\n"
+        "1 package (9 ounces) fresh spinach, trimmed\n\n"
+        "4 cups fresh strawberries, sliced\n\n"
+        "1/4 cup chopped pecans, toasted\n\n"
+    </string>
+    <string name="Salad3_Instruct">
+        "Place the first eight ingredients in a jar with a tight-fitting lid; shake well. Refrigerate for 1 hour.\n\n"
+        "Just before serving, combine the remaining ingredients in a large bowl. Shake dressing and drizzle over salad; toss to coat.\n\n"
+        "Makes 10 servings\n\n"
+    </string>
+    <string name="Salad4_Ingre">
+        "1 can (15 ounces) black beans, rinsed and drained\n\n"
+        "1 jar (13 ounces) corn relish\n\n"
+        "1/2 cup canned kidney beans\n\n"
+        "1/2 cup quartered cherry tomatoes\n\n"
+        "1/2 cup chopped celery\n\n"
+        "1/4 cup chopped sweet orange pepper\n\n"
+        "1/4 cup sliced pimiento-stuffed olives\n\n"
+        "2 teaspoons minced fresh parsley\n\n"
+    </string>
+    <string name="Salad4_Instruct">
+        "In a large bowl, combine all ingredients. Cover and refrigerate until serving.\n\n"
+        "Makes 12 servings (1/2 cup each)\n\n"
+    </string>
+    <string name="Salad5_Ingre">
+        "8 large tomatoes, cut into 1/4-inch slices\n\n"
+        "2 large sweet onions, halved and thinly sliced\n\n"
+        "1/3 cup olive oil\n\n"
+        "2 tablespoons lemon juice\n\n"
+        "1 teaspoon dried oregano\n\n"
+        "3/4 teaspoon salt\n\n"
+        "1/4 teaspoon pepper\n\n"
+        "2 tablespoons minced fresh parsley\n\n"
+    </string>
+    <string name="Salad5_Instruct">
+        "Arrange tomatoes and onions on a large rimmed serving platter. In a small bowl, whisk the oil, lemon juice, oregano, salt and pepper. Drizzle over top. Sprinkle with parsley.\n\n"
+        "Makes 12 servings\n\n"
+    </string>
+
+
+    <string name="title_activity_soup">Soups</string>
+    <string name="roastedtomatosoup">Roasted Tomato Soup</string>
+    <string name="chipotlebutternutsquashsoup">Chipotle Butternut Squash Soup</string>
+    <string name="cauliflowersoup">Cauliflower Soup</string>
+    <string name="veggiethaicurrysoup">Veggie Thai Curry Soup</string>
+    <string name="quickmexicanbeansoup">Quick Mexican Bean Soup</string>
+
+
+    <string name="Soup1_Ingre">
+        "15 large tomatoes (5 pounds), seeded and quartered\n\n"
+        "1/4 cup plus 2 tablespoons canola oil, divided\n\n"
+        "8 garlic cloves, minced\n\n"
+        "1 large onion, chopped\n\n"
+        "2 cups water\n\n"
+        "1 teaspoon salt\n\n"
+        "1/2 teaspoon crushed red pepper flakes, optional\n\n"
+        "1/2 cup heavy whipping cream\n\n"
+        "Fresh basil leaves, optional\n\n"
+    </string>
+    <string name="Soup1_Instruct">
+        "Preheat oven to 400°. Place tomatoes in a greased 15x10x1-in. baking pan. Combine 1/4 cup oil and garlic; drizzle over tomatoes. Toss to coat. Bake 15-20 minutes or until softened, stirring occasionally. Remove and discard skins.\n\n"
+        "Meanwhile, in a Dutch oven, saute onion in remaining oil until tender. Add tomatoes, water, salt and, if desired, pepper flakes. Bring to a boil. Reduce heat; cover and simmer 30 minutes or until flavors are blended. Cool slightly.\n\n"
+        "In a blender, process soup in batches until smooth. Return to pan. Stir in cream and heat through. Sprinkle with basil if desired.\n\n"
+        "Makes 6 servings.\n\n"
+    </string>
+    <string name="Soup2_Ingre">
+        "2 cups diced peeled butternut squash\n\n"
+        "1 small carrot, finely chopped\n\n"
+        "1 green onion, sliced\n\n"
+        "1/2 teaspoon ground cumin\n\n"
+        "1 tablespoon olive oil\n\n"
+        "2 garlic cloves, minced\n\n"
+        "2 cups vegetable broth, divided\n\n"
+        "1 can (14-1/2 ounces) diced tomatoes, undrained\n\n"
+        "3 ounces cream cheese, cubed\n\n"
+        "1/4 cup minced fresh basil\n\n"
+        "1 chipotle pepper in adobo sauce, chopped\n\n"
+        "1 can (15 ounces) black beans, rinsed and drained\n\n"
+        "1 can (11 ounces) Mexicorn, drained\n\n"
+        "2 cups fresh baby spinach\n\n"
+        "Fresh sage, optional\n\n"
+    </string>
+    <string name="Soup2_Instruct">
+        "In a large saucepan, saute the squash, carrot, onion and cumin in oil for 10 minutes. Add garlic; cook 1 minute longer. Add 1-1/2 cups broth; bring to a boil. Reduce heat. Cover and simmer for 10-12 minutes or until vegetables are tender; cool slightly.\n\n"
+        "Transfer mixture to a blender; add the tomatoes, cream cheese, basil, chipotle pepper and remaining broth. Cover and process for 1-2 minutes or until smooth.\n\n"
+        "Return to the saucepan; stir in the beans, corn and spinach. Cook and stir until spinach is wilted and soup is heated through. If desired, sprinkle with fresh sage.\n\n"
+        "Makes 5 servings.\n\n"
+
+    </string>
+    <string name="Soup3_Ingre">
+        "1 medium head cauliflower, broken into florets\n\n"
+        "1 medium carrot, shredded\n\n"
+        "1/4 cup chopped celery\n\n"
+        "2-1/2 cups water\n\n"
+        "2 teaspoons chicken bouillon or 1 vegetable bouillon cube\n\n"
+        "3 tablespoons butter\n\n"
+        "3 tablespoons all-purpose flour\n\n"
+        "3/4 teaspoon salt\n\n"
+        "1/8 teaspoon pepper\n\n"
+        "2 cups 2% milk\n\n"
+        "1 cup shredded cheddar cheese\n\n"
+        "1/2 to 1 teaspoon hot pepper sauce, optional\n\n"
+    </string>
+    <string name="Soup3_Instruct">
+        "In a Dutch oven, combine the cauliflower, carrot, celery, water and bouillon. Bring to a boil. Reduce heat; cover and simmer for 12-15 minutes or until vegetables are tender (do not drain).\n\n"
+        "In a large saucepan, melt butter. Stir in the flour, salt and pepper until smooth. Gradually add milk. Bring to a boil over medium heat; cook and stir for 2 minutes or until thickened. Reduce heat. Stir in the cheese until melted, adding hot pepper sauce if desired. Stir into the cauliflower mixture.\n\n"
+        "Makes 8 servings (about 2 quarts).\n\n"
+    </string>
+    <string name="Soup4_Ingre">
+        "1 package (8.8 ounces) thin rice noodles or uncooked angel hair pasta\n\n"
+        "1 tablespoon sesame oil\n\n"
+        "2 tablespoons red curry paste\n\n"
+        "1 cup light coconut milk\n\n"
+        "1 carton (32 ounces) reduced-sodium chicken broth or vegetable broth\n\n"
+        "1 tablespoon reduced-sodium soy sauce or fish sauce\n\n"
+        "1 package (14 ounces) firm tofu, drained and cubed\n\n"
+        "1 can (8-3/4 ounces) whole baby corn, drained and cut in half\n\n"
+        "1 can (5 ounces) bamboo shoots, drained\n\n"
+        "1-1/2 cups sliced fresh shiitake mushrooms\n\n"
+        "1/2 medium sweet red pepper, cut into thin strips\n\n"
+        "Torn fresh basil leaves and lime wedges\n\n"
+    </string>
+    <string name="Soup4_Instruct">
+        "Prepare noodles according to package directions.\n\n"
+        "Meanwhile, in a 6-qt. stockpot, heat oil over medium heat. Add curry paste; cook until aromatic, about 30 seconds. Gradually whisk in coconut milk until blended. Stir in broth and soy sauce; bring to a boil.\n\n"
+        "Add tofu and vegetables to stockpot; cook until vegetables are crisp-tender, 3-5 minutes. Drain noodles; add to soup. Top each serving with basil; serve with lime wedges.\n\n"
+        "Makes 6 servings\n\n"
+    </string>
+    <string name="Soup5_Ingre">
+        "1 can (16 ounces) butter beans, rinsed and drained\n\n"
+        "1 can (15-1/2 ounces) small white beans or navy beans, rinsed and drained\n\n"
+        "1 can (14-1/2 ounces) no-salt-added diced tomatoes, undrained\n\n"
+        "1 can (4 ounces) chopped green chiles\n\n"
+        "1 tablespoon minced fresh cilantro\n\n"
+        "1-1/2 teaspoons chili powder\n\n"
+        "1/2 teaspoon onion powder\n\n"
+        "1-1/2 cups vegetable stock\n\n"
+        "Crumbled queso fresco and additional cilantro, optional\n\n"
+    </string>
+    <string name="Soup5_Instruct">
+        "In a large saucepan, combine first eight ingredients; bring to a boil. Reduce heat; simmer, covered, until flavors are blended, about 10 minutes. If desired, top with cheese and additional cilantro.\n\n"
+        "Makes 4 servings.\n\n"
+    </string>
+
+
+    <string name="title_activity_stirfry">Stir Fry</string>
+    <string name="chilligingervegetabletofu">Chilli Ginger Vegetable Tofu Stirfry</string>
+    <string name="beetrootporiyal">Beetroot Poriyal</string>
+    <string name="rawpapaya">Raw Papaya Stirfry</string>
+    <string name="zucchinipepper">Zucchini and Pepper Stirfry</string>
+    <string name="cabbagecarrot">Cabbage and Carrot Stirfry</string>
+
+
+    <string name="Stirfry1_Ingre">
+        "250 grams Tofu	, drained on paper and cut into thick finger length\n\n"
+        "6 Button mushrooms, 3 Baby corn sliced, 7 Green beans (French Beans) cut, and 7 Broccoli florets\n\n"
+        "1 Red, green, and yellow Bell pepper (Capsicum), sliced\n\n"
+        "1 Onion, sliced lengthwise\n\n"
+        "4 cloves Garlic, finely minced, 2 teaspoons Ginger, grated and 2 Fresh Red chillies, chopped\n\n"
+        "2 tablespoon Plum sauce, (asian), 3 tablespoon Light soy sauce, and 2 tablespoon Rice Wine Vinegar\n\n"
+        "Salt to taste\n\n"
+        "3 tablespoon Cooking oil\n\n"
+        "Sesame seeds, Garlic chives(chopped), and Corriander leaves(chopped), as required for garnish\n\n"
+    </string>
+    <string name="Stirfry1_Instruct">
+        "To begin making the Chilli Ginger Vegetable Tofu stir fry, first place the Tofu pieces in a mixing bowl.\n\n"
+
+        "In a small bowl whisk together 2 tablespoon light soy sauce,1 tablespoon vinegar, salt, 1 chopped chilly, grated ginger and whisk.\n\n"
+
+        "Drizzle this mixture over the tofu pieces and mix to coat well. Keep aside for at least 30 minutes.\n\n"
+
+        "Heat 2 tablespoon oil in a wok. Add the tofu pieces and fry on high heat till they turn golden brown. Take them out and keep aside till further use.\n\n"
+
+        "Add the remaining oil in the wok. Add the onion, garlic and sauté for a few seconds on high heat.\n\n"
+
+        "Add the mushrooms and sauté till they sweat. Add the chillies and other vegetables and sauté for 1-2 minutes.\n\n"
+
+        "Add the ginger julienne, reserving a few for the garnish. Add the Tofu pieces, sauces, pepper and vinegar and stir well.\n\n"
+
+        "Adjust the salt if required and take out the stir-fry on a serving plate. Garnish with the chives, remaining ginger julienne and sesame seeds.\n\n"
+
+        "Makes 4 servings.\n\n"
+    </string>
+    <string name="Stirfry2_Ingre">
+        "2 Beetroot	, diced small\n\n"
+        "1/2 teaspoon Mustard seeds\n\n"
+        "1/2 teaspoon Cumin (Jeera) seeds\n\n"
+        "1 teaspoon White Urad Dal (Split)\n\n"
+        "4 to 5 Curry leaves, roughly torn\n\n"
+        "1/4 teaspoon Asafoetida (hing)\n\n"
+        "1/4 teaspoon Turmeric powder (Haldi)\n\n"
+        "1 tablespoon Fresh coconut	, grated\n\n"
+        "Cooking oil, as required\n\n"
+        "Salt, to taste\n\n"
+        "Optional ingredients\n\n"
+        "1/2 cup Pearl onions (Sambar Onions), finely chopped\n\n"
+        "2 Green Chillies, finely chopped\n\n"
+    </string>
+    <string name="Stirfry2_Instruct">
+        "To begin pressure cooking the beetroot, place the chopped beetroot into the cooker, sprinkle some salt and add 2 to 3 tablespoons of water.\n\n"
+
+        "Cover the pressure cooker. After 2 whistles turn off the heat.\n\n"
+
+        "Beetroot cooks quickly so release the pressure immediately and keep the beetroot aside.\n\n"
+
+        "Heat a teaspoon of oil in a heavy bottomed pan; add the mustard seeds, cumin seeds, urad dal and curry leaves.\n\n"
+
+        "Allow the urad dal to roast until lightly brown. If you are adding the onions and green chillies, add it at this stage and saute until soft and the raw smell goes away.\n\n"
+
+        "Next add the asafoetida, turmeric powder, steamed beetroot and salt and stir fry for about a minutes until well combined.\n\n"
+
+        "Finally garnish with fresh grated coconut and transfer it to a serving bowl.\n\n"
+
+        "Makes 4 servings.\n\n"
+    </string>
+    <string name="Stirfry3_Ingre">
+        "1 teaspoon Cooking oil\n\n"
+        "1 teaspoon Mustard seeds\n\n"
+        "1 teaspoon Cumin (Jeera) seeds\n\n"
+        "1/4 teaspoon Asafoetida (hing)\n\n"
+        "1 teaspoon Turmeric powder (Haldi)\n\n"
+        "2 Green Chillies	, slit\n\n"
+        "250 gram Raw papaya	, peeled\n\n"
+        "Salt	, to taste\n\n"
+    </string>
+    <string name="Stirfry3_Instruct">
+        "Heal oil in a pan over medium heat; add the mustard seeds and cumin seeds. Allow them to crackle. Add the hing, green chillies, turmeric and the raw grated papaya along with salt.\n\n"
+
+        "Stir fry until the papaya softens just a bit. Once done, turn off the heat and transfer the papitha nu sambharo to a bowl and serve.\n\n"
+
+         "Makes 4 servings.\n\n"
+    </string>
+    <string name="Stirfry4_Ingre">
+        "2 Green zucchini	, cut into long stripes\n\n"
+        "2 Red Bell pepper (Capsicum)	, de-seeded and cut into stripes\n\n"
+        "1 Onion	, thinly sliced\n\n"
+        "3 cloves Garlic	, finely chopped\n\n"
+        "1 teaspoon Fresh Thyme leaves\n\n"
+        "1 teaspoon Dried oregano\n\n"
+        "1 teaspoon Red Chilli flakes\n\n"
+        "1 tablespoon Extra Virgin Olive Oil\n\n"
+        "Salt	, to taste\n\n"
+    </string>
+    <string name="Stirfry4_Instruct">
+        "To begin making Zucchini and Bell Pepper Stir Fry Recipe, wash, dry and cut the zucchinis and bell peppers into long stripes and keep aside.\n\n"
+
+        "Heat olive oil in a wok, add the finely chopped garlic and saute till it turns golden colour.\n\n"
+
+        "Add the sliced onion and saute until it turns translucent.\n\n"
+
+        "Add in the zucchini and red bell pepper stripes, season with salt and flash fry them for a minute.\n\n"
+
+        "Add in the oregano, thyme and red chilli flakes and saute for another minute and switch off the flame.\n\n"
+
+        "Makes 4 servings.\n\n"
+    </string>
+    <string name="Stirfry5_Ingre">
+        "3 Carrots (Gajjar)	, grated\n\n"
+        "3 cups Cabbage (Patta Gobi/ Muttaikose)	, shredded\n\n"
+        "1 Green Bell Pepper (Capsicum)	, thinly sliced\n\n"
+        "1/2 teaspoon Turmeric powder (Haldi)\n\n"
+        "1 teaspoon Sugar\n\n"
+        "1 teaspoon Lemon juice\n\n"
+        "Salt	, to taste\n\n"
+        "Ingredients for Seasoning\n\n"
+        "1 teaspoon Cooking oil\n\n"
+        "1 teaspoon Mustard seeds\n\n"
+        "1/4 teaspoon Asafoetida (hing)\n\n"
+        "1 sprig Curry leaves\n\n"
+        "3 Green Chillies	, slit lengthwise\n\n"
+    </string>
+    <string name="Stirfry5_Instruct">
+        "To begin making the Cabbage and Carrot Stirfry Recipe, heat oil in a heavy bottomed pan on medium heat. Add the mustard seeds and allow it to crackle.\n\n"
+
+        "Once it crackles, add the asafoetida, green chilies, curry leaves and saute for a few seconds.  At this stage add the turmeric powder and the chopped vegetables, salt and stir to combine all the ingredients well.\n\n"
+
+        "Turn the heat to low, cover the pan and allow the vegetables to cook in its own steam for about 3 to 4 minutes, until just about cooked.  You want the vegetables to remain little firm and crunchy and not too soft.\n\n"
+
+        "Once done, turn off the heat and the Cabbage and Carrot Stirfry is ready to be served.\n\n"
+
+        "Makes 4 servings.\n\n"
+    </string>
+
+
     <string name="title_activity_pickfruit">Pickfruit</string>
-    <string name="title_activity_smoothie_recipes">SmoothieRecipes</string>
-    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="apple">Apple</string>
+    <string name="banana">Banana</string>
+    <string name="mandarin">Mandarin</string>
+    <string name="pomegranate">Pomegranate</string>
+    <string name="strawberry">Strawberries</string>
+
+    <string name="fruit1_nutri">
+        "1 serving = 140 g (1 medium):\n\n"
+        "Source of Vitamin C (6% Recommended Daily Intake per serving)\n\n"
+        "High in fibre (3 g per serving)\n\n"
+        "Sodium-free (1 mg per serving)\n\n"
+    </string>
+    <string name="fruit2_nutri">
+        "1 serving = 140 g (1 large)\n\n"
+        "High in potassium (500 mg per serving)\n\n"
+        "Source of Vitamin C (15% Recommended Daily Intake per serving)\n\n"
+        "Source of fibre (3 g per serving)\n\n"
+        "Sodium-free (0 mg per serving)\n\n"
+        "Fat-free (0 g per serving)\n\n"
+    </string>
+    <string name="fruit3_nutri">
+        "1 serving = 88 g (1 medium mandarin)\n\n"
+        "Source of Fiber\n\n"
+        "Source of Vitamin A (12% Recommended Daily Intake per serving)\n\n"
+        "Source of Vitamin C (39% Recommended Daily Intake per serving)\n\n"
+    </string>
+    <string name="fruit4_nutri">
+        "1 serving = 77 g (1/2 fruit)\n\n"
+        "Source of Vitamin C (13% Recommended Daily Intake per serving)\n\n"
+        "Source of Vitamin K (16% Recommended Daily Intake per serving)\n\n"
+        "Sodium-free (2 mg per serving)\n\n"
+        "Source of fibre (3 g per serving)\n\n"
+    </string>
+    <string name="fruit5_nutri">
+        "1 serving = 140 g (7 medium)\n\n"
+        "Very high in Vitamin C (150% Recommended Daily Intake per serving)\n\n"
+        "Sodium-free (0 mg per serving)\n\n"
+        "Fat-free (0 g per serving)\n\n"
+    </string>
+
+
+
 </resources>

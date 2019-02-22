@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/appsbackground"
     tools:context=".MealMainActivity">
 
     <Button
@@ -13,12 +13,13 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="80dp"
+        android:layout_marginStart="73dp"
         android:layout_marginLeft="74dp"
         android:layout_marginTop="33dp"
         android:layout_marginRight="74dp"
-        android:text="@string/smoothie"
-        android:onClick="smoothies"/>
+        android:background="@android:color/background_light"
+        android:onClick="smoothies"
+        android:text="@string/smoothie" />
 
     <Button
         android:id="@+id/b_salad"
@@ -27,12 +28,13 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="80dp"
+        android:layout_marginStart="73dp"
         android:layout_marginLeft="74dp"
         android:layout_marginTop="120dp"
+        android:background="@android:color/background_light"
         android:gravity="center"
-        android:text="@string/salad"
-        android:onClick="salad"/>
+        android:onClick="salad"
+        android:text="@string/salad" />
 
     <Button
         android:id="@+id/b_soup"
@@ -41,12 +43,13 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="80dp"
+        android:layout_marginStart="73dp"
         android:layout_marginLeft="74dp"
         android:layout_marginTop="206dp"
+        android:background="@android:color/background_light"
         android:gravity="center"
-        android:text="@string/soup"
-        android:onClick="soup"/>
+        android:onClick="soup"
+        android:text="@string/soup" />
 
     <Button
         android:id="@+id/b_stirfry"
@@ -55,12 +58,13 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="80dp"
+        android:layout_marginStart="73dp"
         android:layout_marginLeft="74dp"
         android:layout_marginTop="289dp"
+        android:background="@android:color/background_light"
         android:gravity="center"
-        android:text="@string/stirfry"
-        android:onClick="stirfry"/>
+        android:onClick="stirfry"
+        android:text="@string/stirfry" />
 
     <Button
         android:id="@+id/b_pickfruit"
@@ -69,12 +73,13 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="80dp"
+        android:layout_marginStart="73dp"
         android:layout_marginLeft="74dp"
         android:layout_marginTop="374dp"
+        android:background="@android:color/background_light"
         android:gravity="center"
-        android:text="@string/pickfruit"
-        android:onClick="pickfruit"/>
+        android:onClick="pickfruit"
+        android:text="@string/pickfruit" />
 
 
 </RelativeLayout>

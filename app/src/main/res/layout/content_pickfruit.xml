@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,10 +9,129 @@
     tools:context=".Pickfruit"
     tools:showIn="@layout/activity_pickfruit">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/text_margin"
-        android:text="@string/large_text" />
+        android:orientation="vertical">
 
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s_height" />
+
+        <ImageView
+            android:id="@+id/Fruit1"
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/image_height"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:contentDescription="@string/apple"
+            android:focusable="true"
+            android:onClick="Fruit1"
+            android:src="@drawable/apples" />
+
+        <TextView
+            android:id="@+id/t_apples"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/apple"
+            android:textAlignment="center"
+            android:textSize="@dimen/content_font"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s_height" />
+
+        <ImageView
+            android:id="@+id/Fruit2"
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/image_height"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:contentDescription="@string/banana"
+            android:focusable="true"
+            android:onClick="Fruit2"
+            app:srcCompat="@drawable/banana" />
+
+        <TextView
+            android:id="@+id/t_banana"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/banana"
+            android:textAlignment="center"
+            android:textSize="@dimen/content_font"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s_height" />
+
+        <ImageView
+            android:id="@+id/Fruit3"
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/image_height"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:contentDescription="@string/mandarin"
+            android:focusable="true"
+            android:onClick="Fruit3"
+            app:srcCompat="@drawable/mandarin" />
+
+        <TextView
+            android:id="@+id/t_mandarin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mandarin"
+            android:textAlignment="center"
+            android:textSize="@dimen/content_font"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s_height" />
+
+        <ImageView
+            android:id="@+id/Fruit4"
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/image_height"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:contentDescription="@string/pomegranate"
+            android:focusable="true"
+            android:onClick="Fruit4"
+            app:srcCompat="@drawable/pomegranate" />
+
+        <TextView
+            android:id="@+id/t_pomegranate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pomegranate"
+            android:textAlignment="center"
+            android:textSize="@dimen/content_font"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s_height" />
+
+        <ImageView
+            android:id="@+id/Fruit5"
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/image_height"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:contentDescription="@string/strawberry"
+            android:focusable="true"
+            android:onClick="Fruit5"
+            app:srcCompat="@drawable/strawberry" />
+
+        <TextView
+            android:id="@+id/t_strawberries"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/strawberry"
+            android:textAlignment="center"
+            android:textSize="@dimen/content_font"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s_bottom" />
+
+    </LinearLayout>
 </android.support.v4.widget.NestedScrollView>

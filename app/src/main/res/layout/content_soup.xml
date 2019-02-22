@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,10 +9,129 @@
     tools:context=".Soup"
     tools:showIn="@layout/activity_soup">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/text_margin"
-        android:text="@string/large_text" />
+        android:orientation="vertical">
 
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s_height" />
+
+        <ImageView
+            android:id="@+id/Soup1"
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/image_height"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:contentDescription="@string/roastedtomatosoup"
+            android:focusable="true"
+            android:onClick="Soup1"
+            android:src="@drawable/roastedtomatosoup" />
+
+        <TextView
+            android:id="@+id/t_roastedtomato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/roastedtomatosoup"
+            android:textAlignment="center"
+            android:textSize="@dimen/content_font"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s_height" />
+
+        <ImageView
+            android:id="@+id/Soup2"
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/image_height"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:contentDescription="@string/chipotlebutternutsquashsoup"
+            android:focusable="true"
+            android:onClick="Soup2"
+            app:srcCompat="@drawable/chipotlebutternutsquashsoup" />
+
+        <TextView
+            android:id="@+id/t_chipotlebutternutsquash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/chipotlebutternutsquashsoup"
+            android:textAlignment="center"
+            android:textSize="@dimen/content_font"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s_height" />
+
+        <ImageView
+            android:id="@+id/Soup3"
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/image_height"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:contentDescription="@string/cauliflowersoup"
+            android:focusable="true"
+            android:onClick="Soup3"
+            app:srcCompat="@drawable/cauliflowersoup" />
+
+        <TextView
+            android:id="@+id/t_cauliflower"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cauliflowersoup"
+            android:textAlignment="center"
+            android:textSize="@dimen/content_font"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s_height" />
+
+        <ImageView
+            android:id="@+id/Soup4"
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/image_height"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:contentDescription="@string/veggiethaicurrysoup"
+            android:focusable="true"
+            android:onClick="Soup4"
+            app:srcCompat="@drawable/veggiethaicurrysoup" />
+
+        <TextView
+            android:id="@+id/t_veggiethaicurry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/veggiethaicurrysoup"
+            android:textAlignment="center"
+            android:textSize="@dimen/content_font"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s_height" />
+
+        <ImageView
+            android:id="@+id/Soup5"
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/image_height"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:contentDescription="@string/quickmexicanbeansoup"
+            android:focusable="true"
+            android:onClick="Soup5"
+            app:srcCompat="@drawable/quickmexicanbeansoup" />
+
+        <TextView
+            android:id="@+id/t_quickmexicanbean"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/quickmexicanbeansoup"
+            android:textAlignment="center"
+            android:textSize="@dimen/content_font"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s_bottom" />
+
+    </LinearLayout>
 </android.support.v4.widget.NestedScrollView>

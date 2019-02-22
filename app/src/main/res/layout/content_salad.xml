@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,10 +9,129 @@
     tools:context=".Salad"
     tools:showIn="@layout/activity_salad">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/text_margin"
-        android:text="@string/large_text" />
+        android:orientation="vertical">
 
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s_height" />
+
+        <ImageView
+            android:id="@+id/Salad1"
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/image_height"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:contentDescription="@string/greenbeanwalnut"
+            android:focusable="true"
+            android:onClick="Salad1"
+            android:src="@drawable/greenbeanandwalnutsalad" />
+
+        <TextView
+            android:id="@+id/t_greenbean"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/greenbeanwalnut"
+            android:textAlignment="center"
+            android:textSize="@dimen/content_font"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s_height" />
+
+        <ImageView
+            android:id="@+id/Salad2"
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/image_height"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:contentDescription="@string/mozzarellatomato"
+            android:focusable="true"
+            android:onClick="Salad2"
+            app:srcCompat="@drawable/freshmozzarellaandtomatosalad" />
+
+        <TextView
+            android:id="@+id/t_mozzarellatomato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mozzarellatomato"
+            android:textAlignment="center"
+            android:textSize="@dimen/content_font"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s_height" />
+
+        <ImageView
+            android:id="@+id/Salad3"
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/image_height"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:contentDescription="@string/strawberryspinach"
+            android:focusable="true"
+            android:onClick="Salad3"
+            app:srcCompat="@drawable/strawberryspinachsaladwithpoppyseeddressing" />
+
+        <TextView
+            android:id="@+id/t_strawberryspinach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/strawberryspinach"
+            android:textAlignment="center"
+            android:textSize="@dimen/content_font"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s_height" />
+
+        <ImageView
+            android:id="@+id/Salad4"
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/image_height"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:contentDescription="@string/cornnbean"
+            android:focusable="true"
+            android:onClick="Salad4"
+            app:srcCompat="@drawable/colorfulcornnbeansalad" />
+
+        <TextView
+            android:id="@+id/t_cornnbean"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cornnbean"
+            android:textAlignment="center"
+            android:textSize="@dimen/content_font"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s_height" />
+
+        <ImageView
+            android:id="@+id/Salad5"
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/image_height"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:contentDescription="@string/tomato"
+            android:focusable="true"
+            android:onClick="Salad5"
+            app:srcCompat="@drawable/slicedtomatosalad" />
+
+        <TextView
+            android:id="@+id/t_tomato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tomato"
+            android:textAlignment="center"
+            android:textSize="@dimen/content_font"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s_bottom" />
+
+    </LinearLayout>
 </android.support.v4.widget.NestedScrollView>
